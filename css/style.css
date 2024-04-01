@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  
+}
+p {
+  font-size:1.266rem;
+}
+section {
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.imgs img{
+  width: 1000px;
+}
+/* #fff, #222, #000,  and #f8fafc.
+ */
+
+ header div {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+nav ul{
+  list-style: none;
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+nav li {
+  
+
+}
+nav li a{
+  text-decoration: none;
+  color: black;
+  font-size: 2.027rem;
+}
+
+.threeimg {
+  display: flex;
+  gap: 20px;
+}
+.threeimg img{
+  width: 20rem;
+  height: auto;
+}
+
+ h1 {
+  font-size: 2.027rem;
+ }
+
+ h2 {
+  font-size:1.802rem;
+ }
+
+ h3 {
+  font-size:1.266rem;
+ }
+.Sweetheart {
+  text-align: left;
+}
+
+
+.Sweetheart a{
+  background-color:black;
+  color:#fff;
+  padding: 10px 20px;
+  text-decoration:none;
+  border:2px solid black;
+
+  margin-top: auto;
+}
+.Sweetheart a:hover {
+  background-color:#fff;
+  color:black;
+  
+  text-decoration:none;
+  border:2px solid black;
+
+}
+.grid img{
+  max-width: 30rem;
+  border-radius: 10px;
+
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+}
+.reviews {
+  background-color: #222;
+  color: #fff;
+}
+.reviews div {
+  padding-bottom: 10px;
+}
+
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  
+}
+
