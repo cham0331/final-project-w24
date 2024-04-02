@@ -57,7 +57,7 @@ nav li a{
 .fourimg {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 
   gap: 2rem;
 
@@ -69,7 +69,8 @@ nav li a{
 }
 .fourimg :nth-child(1) {
   grid-area: div1;
-  
+
+ 
 
 }
 
