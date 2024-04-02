@@ -2,8 +2,9 @@
   box-sizing: border-box;
 }
 body{
-  margin: 0;
+  margin: 0 auto;
   font-family: "Poppins", sans-serif;
+  max-width: 1200px;
   
 }
 p {
@@ -14,20 +15,24 @@ section {
 }
 
 .container {
-  max-width: 1200px;
+  margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  max-width: 1200px;
 }
 .imgs img{
-  width: 1000px;
+  /* width: 1000px;
+  height: auto; */
 }
 /* #fff, #222, #000,  and #f8fafc.
  */
-
+header {
+  margin: 0 auto;
+}
  header div {
   display: flex;
   justify-content: space-between;
-  
+  padding-right: 30px;
 }
 
 nav ul{
@@ -36,6 +41,7 @@ nav ul{
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  
 }
 
 nav li {
@@ -48,12 +54,40 @@ nav li a{
   font-size: 2.027rem;
 }
 
-.threeimg {
-  display: flex;
-  gap: 20px;
+.fourimg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  gap: 2rem;
+
+
+  grid-template-areas: 
+  "div1 div1 div1 "
+  "div2 div3 div4 "
+  ;
 }
-.threeimg img{
-  width: 20rem;
+.fourimg :nth-child(1) {
+  grid-area: div1;
+  
+
+}
+
+.fourimg :nth-child(2) {
+  grid-area: div2;
+  
+}
+.fourimg :nth-child(3) {
+  grid-area: div3;
+}
+.fourimg :nth-child(4) {
+  grid-area: div4;
+}
+
+
+
+.fourimg img{
+  max-width: 20rem;
   height: auto;
 }
 
@@ -91,7 +125,7 @@ nav li a{
 
 }
 .grid img{
-  max-width: 30rem;
+  max-width: 20rem;
   border-radius: 10px;
 
 }
@@ -120,3 +154,22 @@ footer {
   
 }
 
+@media (min-width: 768px) {
+  .imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+.grid {
+  display: flex;
+  flex-direction: row;
+  
+}
+.grid img {
+  max-width: 15rem;
+  gap: 2rem;
+}
+}
+
+@media (min-width: 960px) {
+
+}
