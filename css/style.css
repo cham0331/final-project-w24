@@ -169,8 +169,17 @@ footer {
   max-width: 15rem;
   gap: 2rem;
 }
+
+.behindthedough,.reviews {
+  text-align: center;
 }
+}
+.tryitwith h3 {
+  text-align: center;
+}
+
 
 @media (min-width: 960px) {
 
+ 
 }
