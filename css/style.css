@@ -10,19 +10,19 @@ body{
 p {
   font-size:1.266rem;
 }
-section {
-  padding: 20px;
-}
+
 
 .container {
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   max-width: 1200px;
 }
 .imgs img{
   /* width: 1000px;
   height: auto; */
+
+  /* padding: 0; */
 }
 /* #fff, #222, #000,  and #f8fafc.
  */
@@ -44,10 +44,7 @@ nav ul{
   
 }
 
-nav li {
-  
 
-}
 nav li a{
   text-decoration: none;
   color: black;
@@ -55,6 +52,7 @@ nav li a{
 }
 
 .fourimg {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -66,24 +64,15 @@ nav li a{
   "div1 div1 div1 "
   "div2 div3 div4 "
   ;
+
 }
+
 .fourimg :nth-child(1) {
   grid-area: div1;
-
- 
-
 }
 
-.fourimg :nth-child(2) {
-  grid-area: div2;
-  
-}
-.fourimg :nth-child(3) {
-  grid-area: div3;
-}
-.fourimg :nth-child(4) {
-  grid-area: div4;
-}
+
+
 
 
 
@@ -105,6 +94,7 @@ nav li a{
  }
 .Sweetheart {
   text-align: left;
+  padding-left: 2rem;
 }
 
 
@@ -125,6 +115,13 @@ nav li a{
   border:2px solid black;
 
 }
+
+.behindthedough {
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+
 .grid img{
   max-width: 20rem;
   border-radius: 10px;
@@ -137,6 +134,10 @@ nav li a{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 1rem;
+
 }
 .reviews {
   background-color: #222;
@@ -144,6 +145,8 @@ nav li a{
 }
 .reviews div {
   padding-bottom: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 
@@ -156,9 +159,15 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .imgs {
+  .fourimg  {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: 
+  "div1 div2 "
+  "div3 div4"
+  ;
   }
 .grid {
   display: flex;
@@ -180,6 +189,16 @@ footer {
 
 
 @media (min-width: 960px) {
+
+.textandimg {
+  display: flex;
+  
+}
+
+
+.reviews-article {
+  display: flex;
+}
 
  
 }
